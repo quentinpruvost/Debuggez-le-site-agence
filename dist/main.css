@@ -1,0 +1,478 @@
+.Button {
+  background: #5b32ff;
+  background: linear-gradient(100deg, rgb(101, 63, 255) 0%, rgb(150, 125, 255) 100%);
+  height: 80px;
+  min-width: 210px;
+  border: none;
+  color: white;
+  font-size: 16pt;
+}
+.Button:hover {
+  background: linear-gradient(100deg, rgb(101, 63, 255) 0%, rgb(50, 0, 255) 100%);
+  cursor: pointer;
+}
+
+.EventCard {
+  position: relative;
+  width: 363px;
+  height: 336px;
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  margin: 16px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.EventCard--small {
+  width: 274px;
+  height: 190px;
+}
+.EventCard--small .EventCard__imageContainer {
+  height: 126px;
+  min-height: auto;
+  overflow: hidden;
+}
+.EventCard--small .EventCard__descriptionContainer {
+  padding: 0;
+  padding-top: 12px;
+  font-size: 12px;
+}
+.EventCard--small .EventCard__month {
+  margin-top: 0;
+  font-size: 8px;
+}
+.EventCard--small .EventCard__label {
+  font-size: 8px;
+  width: 75px;
+  height: 21px;
+}
+.EventCard__label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #5b32ff;
+  font-size: 10px;
+  width: 99px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.EventCard__imageContainer {
+  min-height: 252px;
+  overflow: hidden;
+}
+.EventCard__descriptionContainer {
+  color: #374151;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 400;
+  padding: 30px;
+  width: 80%;
+}
+.EventCard__title {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.EventCard__month {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  color: #374151;
+  align-items: flex-start;
+  margin: 8px;
+}
+.inputField span {
+  font-size: 12pt;
+  margin-bottom: 4px;
+}
+
+input {
+  height: 60px;
+  min-width: 424px;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  color: #374151;
+  font-family: "Manrope", sans-serif;
+}
+input:focus {
+  color: #5b32ff;
+}
+
+textarea {
+  height: 336px;
+  min-width: 424px;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  color: #374151;
+  font-family: "Manrope", sans-serif;
+}
+textarea:focus {
+  color: #5b32ff;
+}
+
+.Logo {
+  margin: 22px;
+}
+
+.PeopleCard {
+  position: relative;
+  width: 288px;
+  height: 438px;
+  background: #ffffff;
+  border-radius: 144px 144px 0 0;
+  overflow: hidden;
+  margin: 16px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 32px;
+}
+.PeopleCard__imageContainer {
+  min-height: 252px;
+  overflow: hidden;
+}
+.PeopleCard__descriptionContainer {
+  color: #374151;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  width: 80%;
+}
+.PeopleCard__name {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.PeopleCard__position {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5b32ff;
+}
+
+.SelectContainer {
+  width: 308px;
+  min-height: 86px;
+  position: relative;
+  margin-left: 8px;
+  margin-bottom: 16px;
+}
+.SelectContainer .label {
+  color: white;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.SelectContainer.large {
+  width: 424px;
+}
+.SelectContainer.large .Select {
+  width: 442px;
+}
+.SelectContainer.large .Select ul {
+  width: 442px;
+}
+
+.Select {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  width: 308px;
+  min-height: 60px;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+.Select ul {
+  position: relative;
+  list-style: none;
+  width: 300px;
+  padding: 0;
+  padding-left: 16px;
+}
+.Select ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  min-height: 32px;
+  margin: 0;
+  text-transform: capitalize;
+}
+.Select input {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  margin-right: 16px;
+}
+.Select button {
+  border: none;
+  background: none;
+  height: 32px;
+  margin-top: 16px;
+  margin-right: 8px;
+}
+.Select button.close {
+  transform: rotate(180deg);
+}
+.Select .SelectTitle--show {
+  display: flex;
+}
+.Select .SelectTitle--hide {
+  color: white;
+}
+
+.ServiceCard {
+  width: 363px;
+  height: 629px;
+  background: #ffffff;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 16px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.ServiceCard__textContainer {
+  color: #374151;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  padding: 30px;
+  max-width: 278px;
+  text-align: center;
+}
+.ServiceCard__textContainer h3 {
+  font-size: 22px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.SelectTitle {
+  color: white;
+}
+
+header {
+  height: 112px;
+}
+
+nav {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+  margin: 0;
+  padding-right: 50px;
+}
+nav ul li {
+  list-style: none;
+  margin: 40px;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #374151;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal .content {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  min-width: 300px;
+  min-height: 100px;
+  border-radius: 7px;
+}
+.modal .content button {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal .content button svg {
+  position: relative;
+}
+
+.ModalEvent {
+  font-family: "Manrope", sans-serif;
+  overflow: hidden;
+  width: 450px;
+  position: relative;
+  min-height: 669px;
+  margin-bottom: 32px;
+}
+.ModalEvent__imageContainer {
+  width: 100%;
+}
+.ModalEvent__imageContainer img {
+  width: 100%;
+}
+.ModalEvent__title {
+  position: absolute;
+  background-color: #5b32ff;
+  color: white;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 334px;
+  top: 280px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.ModalEvent__titleLabel {
+  font-size: 16px;
+  font-weight: 600;
+}
+.ModalEvent__titlePeriode {
+  font-size: 14px;
+}
+.ModalEvent__imageContainer {
+  margin-bottom: 64px;
+}
+.ModalEvent__descriptionContainer {
+  text-align: center;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.ModalEvent__descriptionContainer p {
+  font-size: 14px;
+}
+.ModalEvent__descriptionContainer div {
+  font-size: 16px;
+}
+
+.SlideCardList {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 586px;
+}
+.SlideCardList .SlideCard {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: opacity 1s;
+}
+.SlideCardList .SlideCard--hide {
+  opacity: 0;
+}
+.SlideCardList .SlideCard--display {
+  animation: slide 1s forwards;
+}
+.SlideCardList .SlideCard__descriptionContainer {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.SlideCardList .SlideCard__paginationContainer {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.SlideCardList .SlideCard__paginationContainer input {
+  width: 16px;
+  height: 16px;
+  min-width: 0;
+  color: #5b32ff;
+}
+.SlideCardList .SlideCard__description {
+  left: 0;
+  bottom: 50px;
+  width: 857px;
+  background-color: #5b32ff;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  font-family: "Space Grotesk", sans-serif;
+}
+.SlideCardList .SlideCard__description h3 {
+  width: 45%;
+  border-right: 1px solid #4314ff;
+  padding-left: 32px;
+  min-height: 116px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.SlideCardList .SlideCard__description p {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 18px;
+}
+.SlideCardList .SlideCard__description div {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}/*# sourceMappingURL=main.css.map */
